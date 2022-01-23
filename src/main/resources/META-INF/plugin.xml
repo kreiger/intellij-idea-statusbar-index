@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>com.linuxgods.kreiger.idea.statusbar.index</id>
+    <name>Status Bar Index in String</name>
+    <vendor email="christoffer.hammarstrom@linuxgods.com" url="https://github.com/kreiger/intellij-idea-statusbar-index">Christoffer Hammarström</vendor>
+
+    <idea-version since-build="211" />
+
+    <description><![CDATA[
+    Shows the index of the caret inside a possibly concatenated string literal.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <statusBarWidgetFactory id="Index" order="before lineSeparatorWidget"
+                implementation="com.linuxgods.kreiger.idea.statusbar.index.IndexWidgetFactory" />
+    </extensions>
+</idea-plugin>
