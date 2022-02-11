@@ -34,9 +34,11 @@ public class StringValueVisitor extends JavaElementVisitor {
 
     @Override
     public void visitExpression(PsiExpression expression) {
+        /*
         var notification = new Notification("Editor notifications",
                 "Status bar index", "Unsupported expression " + expression, INFORMATION);
         Notifications.Bus.notify(notification, expression.getProject());
+        */
     }
 
     @Override
